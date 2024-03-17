@@ -1,0 +1,289 @@
+.header{
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 60px;
+}
+
+.flipkart-icon{
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: auto;
+}
+
+.search{
+  display: flex;
+  flex: 1;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: rgb(225, 236, 253);
+  align-items: center;
+  max-width: 600px;
+  /* width: auto; */
+}
+
+
+.search-icon{
+  height: 30px;
+  /* margin-left: 50px; */
+
+}
+.search-button{
+  border: none;
+  background-color: rgb(225, 236, 253);
+
+  /* margin-right: 3px; */
+  height: 30px;
+  width: 35px;
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbar{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.search-bar{
+  flex: 1;
+  width: 0px;
+  height: 33px;
+  font-size: 16px;
+  padding-left: 0px;
+  background-color: rgb(225, 236, 253);
+  border: none;
+  border-radius: 4px;
+  position: relative;
+}
+
+.search-bar::placeholder{
+ font-size: 16px;
+}
+
+
+.login-icons, .cart, .store, .login
+/* .login */
+{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  /* flex-wrap: nowrap; */
+  position: relative;
+  width: auto;
+  justify-content: center;
+  flex-shrink: 0; 
+}
+
+.login-tooltip{
+  position: absolute;
+  padding: 5px 5px 4px 6px;
+  top: 40px;
+  left: 0px;
+  width: 200px;
+  display: grid;
+  /* row-gap: 2px; */
+  background-color: white;
+  color: rgb(82, 79, 79);
+  font-size: 16px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  opacity: 0;
+}
+.content{
+  height: 30px;
+  display: flex;
+  align-items: center; 
+  
+}
+
+/* .profile-icon:hover .login-tooltip, 
+.login-text:hover .login-tooltip,
+.dropdown-icon:hover .login-tooltip{
+  
+  opacity: 1;
+} */
+
+ .login:hover 
+ /* .login-icons:hover  */
+ .login-tooltip{
+  opacity: 1;
+}
+
+.login .content:hover{
+  background-color: lightgray;
+}
+
+/* .dropdown-icon:hover, .login-tooltip{
+  opacity: 1;
+} */ 
+.login-header{
+  height: 45px;
+  display: grid;
+  align-items: center;
+  font-size: 16px;
+  grid-template-columns: 2fr 1fr;
+  background-color: rgb(240, 240, 240);
+}
+
+.su{
+  color: rgb(61, 145, 255);
+  font-weight: 600;
+}
+
+
+.login-text{
+  margin-left: 5px;
+  margin-right: 4px;
+}
+
+.cart-text{
+  margin-left: 5px;
+}
+
+.store-text{
+  margin-left: 5px;
+  white-space: nowrap;
+}
+
+.three-dots-img{
+  margin-right: 40px;
+}
+
+.flipkart-icon .tooltip{
+  background-color: darkslategray;
+  color: lightgray;
+  position: absolute;
+  bottom: -30px;
+  right: 30px;
+  font-size: 12px;
+  border-radius: 3px;
+  border-color: black;
+  padding: 4px 8px 4px 8px;
+  border-color: black;
+  opacity: 0;
+
+}
+
+.searchbar .tooltip,
+.cart .tooltip,
+.store .tooltip{
+  background-color: darkslategrey;
+  color: lightgrey;
+  position: absolute;
+  bottom: -30px;
+  /* left: -50px; */
+  font-size: 12px;
+  border-radius: 3px;
+  border-color: black;
+  padding: 4px 8px 4px 8px;
+  border-color: black;
+  /* pointer-events: none; */
+  opacity: 0;
+  
+}
+
+.search-button .tooltip{
+  background-color: darkslategrey;
+  color: lightgrey;
+  position: absolute;
+  bottom: -30px;
+  right: -65px;
+  width: 70px;
+  /* left: -50px; */
+  font-size: 12px;
+  border-radius: 3px;
+  border-color: black;
+  padding: 4px 8px 4px 8px;
+  border-color: black;
+  /* pointer-events: none; */
+  opacity: 0;
+}
+
+.right-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 400px;
+  flex-shrink: 0;
+  /* flex-shrink: 0; */
+  /* min-width: 200px; */
+  /* width: 500px; */
+}
+
+.flipkart-icon:hover .tooltip,
+.search-button:hover .tooltip,
+.searchbar:hover .tooltip,
+.cart:hover .tooltip,
+.store:hover .tooltip{
+  opacity: 1;
+}
+
+.login-icons:hover .dropdown-icon{
+  rotate: 180deg;
+  transition: 0.3s;
+}
+
+.login-icons:hover
+/* .login:hover */
+{
+  height: 38px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: rgb(46, 140, 255);
+}
+
+.three-dots{
+  position: relative;
+}
+
+.three-dots-tooltip{
+  display: grid;
+  position: absolute;
+  padding: 5px 10px;
+  top: 35px;
+  left: -130px;
+  background-color: white;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0;
+}
+.list{
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.three-dots:hover .three-dots-tooltip{
+  opacity: 1;
+}
+
+.three-dots .list:hover {
+  background-color: lightgray;
+}
+
+@media(max-width: 1000px){
+  .cart-text, .store-text{
+    display: none;
+  }
+
+  .search-bar{
+    /* display: flex; */
+    flex-shrink: 8;
+    }
+
+    .right-section{
+      flex-shrink: 4px;
+      min-width: 250px;
+    }
+}
+  
+

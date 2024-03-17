@@ -1,0 +1,48 @@
+.smartphones{
+  display: grid;
+  background-color: white;
+  grid-template-rows: 40px 240px;
+  margin: 10px 15px;
+}
+
+.smartphones-header{
+  font-size: 20px;
+  font-weight: 550;
+  margin: 5px auto auto 5px;
+}
+
+.smartphones-grid{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  column-gap: 10px;
+  padding-top: 10px;
+}
+
+.phone-icon{
+  height: 170px;
+}
+
+.phones{
+  display: grid;
+  grid-template-rows: 170px 20px 20px;
+  /* border-width: 4px;
+  border-color: red; */
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px darkgray solid;
+  
+}
+
+.phone-name{
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+.offers{
+ text-align: center;
+ margin-top: 5x;
+ font-weight: 550;
+}
